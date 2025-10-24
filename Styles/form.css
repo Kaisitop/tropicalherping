@@ -2547,3 +2547,13 @@ button {
   box-sizing: border-box;
 }
 
+#el_3LjCx4PnItw_input_country_select_wrapper::after{
+  content: '▼';
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #666;
+}
