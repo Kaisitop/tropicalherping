@@ -1,0 +1,10 @@
+<FilesMatch "\.(?i:pdf|tif)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
+
+Header set Cache-Control "max-age=84600, public"
+
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|webp|pdf|js|css)$">
+  Header set Cache-Control "max-age=172800, public"
+</FilesMatch>
